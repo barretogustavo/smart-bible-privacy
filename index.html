@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidade — Smart Bible</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      color: #1a1a1a;
+      background: #ffffff;
+    }
+
+    .wrapper {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    header {
+      border-bottom: 1px solid #e5e5e5;
+      padding-bottom: 28px;
+      margin-bottom: 36px;
+    }
+
+    header h1 {
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+      color: #111;
+    }
+
+    header p {
+      margin-top: 6px;
+      font-size: 14px;
+      color: #666;
+    }
+
+    h2 {
+      font-size: 18px;
+      font-weight: 600;
+      color: #111;
+      margin-top: 40px;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      font-size: 15px;
+      font-weight: 600;
+      color: #333;
+      margin-top: 20px;
+      margin-bottom: 6px;
+    }
+
+    p {
+      margin-bottom: 12px;
+      color: #333;
+    }
+
+    ul, ol {
+      padding-left: 20px;
+      margin-bottom: 12px;
+      color: #333;
+    }
+
+    li { margin-bottom: 6px; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 12px;
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+
+    th {
+      text-align: left;
+      background: #f5f5f5;
+      padding: 10px 12px;
+      font-weight: 600;
+      color: #111;
+      border: 1px solid #e5e5e5;
+    }
+
+    td {
+      padding: 9px 12px;
+      border: 1px solid #e5e5e5;
+      vertical-align: top;
+      color: #333;
+    }
+
+    tr:nth-child(even) td { background: #fafafa; }
+
+    .callout {
+      background: #f0f7ff;
+      border-left: 3px solid #3b82f6;
+      padding: 12px 16px;
+      margin: 20px 0;
+      font-size: 14px;
+      color: #1e3a5f;
+      border-radius: 0 6px 6px 0;
+    }
+
+    a { color: #2563eb; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 60px;
+      border-top: 1px solid #e5e5e5;
+      padding-top: 20px;
+      font-size: 13px;
+      color: #888;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      body { background: #0f0f0f; color: #e0e0e0; }
+      header { border-color: #2a2a2a; }
+      header h1, h2, h3 { color: #f0f0f0; }
+      p, li, td { color: #ccc; }
+      th { background: #1e1e1e; color: #f0f0f0; border-color: #2a2a2a; }
+      td { border-color: #2a2a2a; }
+      tr:nth-child(even) td { background: #151515; }
+      .callout { background: #0d1f35; border-color: #3b82f6; color: #a8c8f0; }
+      footer { border-color: #2a2a2a; color: #666; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+
+    <header>
+      <h1>Política de Privacidade — Smart Bible</h1>
+      <p>Última atualização: 25 de maio de 2026</p>
+    </header>
+
+    <p>
+      Esta Política de Privacidade descreve como o aplicativo <strong>Smart Bible</strong>
+      ("nós", "nosso") coleta, usa, armazena e protege as informações dos usuários ("você")
+      quando você utiliza nosso aplicativo disponível na App Store.
+    </p>
+    <p>
+      Ao criar uma conta ou utilizar o Smart Bible, você concorda com os termos desta Política
+      de Privacidade. Se não concordar, não utilize o aplicativo.
+    </p>
+
+    <!-- 1 -->
+    <h2>1. Quais dados coletamos</h2>
+
+    <h3>1.1 Dados de conta (fornecidos por você)</h3>
+    <ul>
+      <li><strong>Endereço de e-mail</strong> — fornecido no cadastro, usado para autenticação.</li>
+      <li><strong>Nome de exibição</strong> — opcional, fornecido no cadastro ou via login social.</li>
+      <li><strong>Foto de perfil</strong> — opcional, proveniente de login social (Google, Apple).</li>
+      <li><strong>Identificador único de usuário (UID)</strong> — gerado automaticamente pelo Firebase.</li>
+    </ul>
+
+    <h3>1.2 Dados de uso da Inteligência Artificial</h3>
+    <ul>
+      <li>Número de perguntas realizadas à IA por dia, associado ao seu UID.</li>
+      <li>O <em>conteúdo</em> das perguntas é enviado ao nosso servidor backend para processamento
+          em tempo real e <strong>não é armazenado</strong> de forma permanente.</li>
+    </ul>
+
+    <h3>1.3 Dados de assinatura</h3>
+    <ul>
+      <li>Status da assinatura ativa (plano, data de início, data de expiração), espelhado do
+          RevenueCat para nosso banco de dados para validação de acesso.</li>
+      <li><strong>Dados de pagamento</strong> (número de cartão, etc.) são processados exclusivamente
+          pela Apple App Store e pelo RevenueCat. Nós nunca temos acesso a esses dados.</li>
+    </ul>
+
+    <h3>1.4 Preferências locais (armazenadas apenas no dispositivo)</h3>
+    <p>Os seguintes dados são salvos somente no seu dispositivo e nunca enviados a servidores:</p>
+    <ul>
+      <li>Versão bíblica preferida</li>
+      <li>Último livro e capítulo lido</li>
+      <li>Preferência de tema (claro/escuro/sistema)</li>
+      <li>Conclusão do onboarding</li>
+    </ul>
+
+    <h3>1.5 Dados técnicos</h3>
+    <p>
+      O Firebase coleta automaticamente dados técnicos básicos como tipo de dispositivo e versão
+      do sistema operacional para fins de estabilidade e diagnóstico de erros. Esses dados são
+      anonimizados e não vinculados à sua identidade.
+    </p>
+
+    <!-- 2 -->
+    <h2>2. Como usamos seus dados</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Dado</th>
+          <th>Finalidade</th>
+          <th>Base legal (LGPD)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>E-mail e UID</td>
+          <td>Autenticação e acesso à conta</td>
+          <td>Execução de contrato</td>
+        </tr>
+        <tr>
+          <td>Nome e foto</td>
+          <td>Personalização da experiência no app</td>
+          <td>Execução de contrato</td>
+        </tr>
+        <tr>
+          <td>Uso diário da IA</td>
+          <td>Controle dos limites de perguntas por plano</td>
+          <td>Execução de contrato</td>
+        </tr>
+        <tr>
+          <td>Status da assinatura</td>
+          <td>Validação de acesso premium no servidor</td>
+          <td>Execução de contrato</td>
+        </tr>
+        <tr>
+          <td>E-mail (opt-in)</td>
+          <td>Envio de comunicações sobre o app (somente com consentimento)</td>
+          <td>Consentimento</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+      Não utilizamos seus dados para publicidade, não vendemos suas informações a terceiros e não
+      criamos perfis comportamentais para fins comerciais.
+    </p>
+
+    <!-- 3 -->
+    <h2>3. Compartilhamento de dados com terceiros</h2>
+    <p>
+      Utilizamos os seguintes prestadores de serviço de confiança, estritamente para as
+      finalidades descritas:
+    </p>
+    <table>
+      <thead>
+        <tr>
+          <th>Prestador</th>
+          <th>Finalidade</th>
+          <th>Dados compartilhados</th>
+          <th>Política de Privacidade</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Google Firebase (Google LLC)</td>
+          <td>Autenticação, banco de dados, diagnóstico</td>
+          <td>E-mail, UID, dados de uso da IA, assinatura</td>
+          <td><a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a></td>
+        </tr>
+        <tr>
+          <td>RevenueCat, Inc.</td>
+          <td>Gerenciamento de assinaturas</td>
+          <td>UID, status de assinatura</td>
+          <td><a href="https://www.revenuecat.com/privacy" target="_blank">revenuecat.com/privacy</a></td>
+        </tr>
+        <tr>
+          <td>Apple Inc. (App Store)</td>
+          <td>Distribuição do app e processamento de pagamentos</td>
+          <td>Gerenciado diretamente pela Apple</td>
+          <td><a href="https://www.apple.com/legal/privacy/pt/" target="_blank">apple.com/legal/privacy</a></td>
+        </tr>
+        <tr>
+          <td>OpenAI (via backend próprio)</td>
+          <td>Processamento das perguntas à IA bíblica</td>
+          <td>Conteúdo da pergunta (sem identificação pessoal)</td>
+          <td><a href="https://openai.com/policies/privacy-policy" target="_blank">openai.com/policies/privacy-policy</a></td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+      Não compartilhamos seus dados com nenhum outro terceiro. Não exibimos publicidade de
+      terceiros no aplicativo.
+    </p>
+
+    <!-- 4 -->
+    <h2>4. Retenção de dados</h2>
+    <ul>
+      <li><strong>Dados de conta:</strong> retidos enquanto a conta estiver ativa.</li>
+      <li><strong>Histórico de uso da IA:</strong> registros diários retidos por até 90 dias,
+          após os quais são excluídos automaticamente.</li>
+      <li><strong>Status de assinatura:</strong> retido enquanto necessário para validação de acesso.</li>
+      <li>Após a exclusão da conta, todos os dados pessoais são removidos em até 30 dias.</li>
+    </ul>
+
+    <!-- 5 -->
+    <h2>5. Segurança dos dados</h2>
+    <p>
+      Adotamos medidas técnicas e organizacionais para proteger seus dados:
+    </p>
+    <ul>
+      <li>Toda comunicação entre o app e nossos servidores é criptografada via HTTPS/TLS.</li>
+      <li>As regras de segurança do Firebase Firestore garantem que cada usuário acesse apenas
+          seus próprios dados.</li>
+      <li>As requisições à IA são autenticadas por token de sessão (Firebase ID Token).</li>
+      <li>Senhas nunca são armazenadas por nós — a autenticação é gerenciada pelo Firebase Authentication.</li>
+    </ul>
+
+    <!-- 6 -->
+    <h2>6. Seus direitos (LGPD)</h2>
+    <p>
+      Em conformidade com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018), você tem direito a:
+    </p>
+    <ul>
+      <li><strong>Confirmação e acesso:</strong> saber quais dados pessoais temos sobre você.</li>
+      <li><strong>Correção:</strong> corrigir dados incompletos, inexatos ou desatualizados.</li>
+      <li><strong>Anonimização, bloqueio ou eliminação:</strong> solicitar a anonimização ou exclusão
+          de dados desnecessários ou excessivos.</li>
+      <li><strong>Portabilidade:</strong> receber seus dados em formato estruturado.</li>
+      <li><strong>Eliminação:</strong> excluir todos os seus dados pessoais mediante solicitação.</li>
+      <li><strong>Revogação do consentimento:</strong> revogar o consentimento para comunicações
+          de marketing a qualquer momento.</li>
+    </ul>
+    <p>
+      Para exercer qualquer um desses direitos, entre em contato pelo e-mail indicado na seção 9.
+      Responderemos em até 15 dias úteis.
+    </p>
+
+    <!-- 7 -->
+    <h2>7. Privacidade de crianças</h2>
+    <p>
+      O Smart Bible é classificado para todas as idades (4+) e não coleta intencionalmente
+      informações pessoais de crianças menores de 13 anos sem o consentimento verificável dos pais
+      ou responsáveis. Se identificarmos que coletamos dados de uma criança sem o devido
+      consentimento, excluiremos essas informações imediatamente.
+    </p>
+    <p>
+      Se você é pai/mãe ou responsável e acredita que seu filho forneceu dados pessoais ao app,
+      entre em contato conosco para solicitar a exclusão.
+    </p>
+
+    <!-- 8 -->
+    <h2>8. Cookies e rastreamento</h2>
+    <p>
+      O Smart Bible é um aplicativo nativo iOS e <strong>não utiliza cookies</strong>.
+      O app <strong>não realiza rastreamento entre apps ou sites de terceiros</strong>
+      e não compartilha dados com redes de publicidade.
+    </p>
+
+    <!-- 9 -->
+    <h2>9. Exclusão de conta e dados</h2>
+    <p>
+      Você pode solicitar a exclusão completa da sua conta e de todos os dados associados
+      enviando um e-mail para o endereço de contato abaixo com o assunto
+      <strong>"Exclusão de dados — Smart Bible"</strong>.
+    </p>
+    <p>
+      Após a confirmação da sua identidade, excluiremos todos os seus dados pessoais em até
+      30 dias. Dados anonimizados ou agregados podem ser mantidos para fins estatísticos.
+    </p>
+
+    <!-- 10 -->
+    <h2>10. Alterações nesta Política</h2>
+    <p>
+      Podemos atualizar esta Política de Privacidade periodicamente. Alterações significativas
+      serão comunicadas dentro do aplicativo ou por e-mail com pelo menos 7 dias de antecedência.
+      O uso continuado do app após a vigência das alterações constitui aceite dos novos termos.
+    </p>
+    <p>
+      A versão mais recente desta política estará sempre disponível nesta página.
+    </p>
+
+    <!-- 11 -->
+    <h2>11. Contato e Encarregado de Dados (DPO)</h2>
+    <div class="callout">
+      Para dúvidas, solicitações de acesso, correção ou exclusão de dados, ou qualquer questão
+      relacionada à privacidade, entre em contato:
+      <br /><br />
+      <strong>E-mail:</strong> <a href="mailto:privacidade@smartbible.app">privacidade@smartbible.app</a><br />
+      <strong>Tempo de resposta:</strong> até 15 dias úteis
+    </div>
+
+    <footer>
+      <p>Smart Bible &copy; 2026. Todos os direitos reservados.</p>
+      <p style="margin-top:4px;">
+        Esta política está em conformidade com a Lei Geral de Proteção de Dados (LGPD — Lei
+        nº 13.709/2018) e com os requisitos de privacidade da Apple App Store.
+      </p>
+    </footer>
+
+  </div>
+</body>
+</html>
