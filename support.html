@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Suporte — Smart Bible</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      color: #1a1a1a;
+      background: #ffffff;
+    }
+
+    .wrapper {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    header {
+      border-bottom: 1px solid #e5e5e5;
+      padding-bottom: 28px;
+      margin-bottom: 36px;
+    }
+
+    header h1 {
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+      color: #111;
+    }
+
+    header p {
+      margin-top: 6px;
+      font-size: 14px;
+      color: #666;
+    }
+
+    h2 {
+      font-size: 18px;
+      font-weight: 600;
+      color: #111;
+      margin-top: 40px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 12px;
+      color: #333;
+    }
+
+    .callout {
+      background: #f0f7ff;
+      border-left: 3px solid #3b82f6;
+      padding: 12px 16px;
+      margin: 20px 0;
+      font-size: 14px;
+      color: #1e3a5f;
+      border-radius: 0 6px 6px 0;
+    }
+
+    a { color: #2563eb; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .support-form {
+      margin-top: 28px;
+    }
+
+    .field {
+      margin-bottom: 18px;
+    }
+
+    .field label {
+      display: block;
+      font-size: 14px;
+      font-weight: 600;
+      color: #111;
+      margin-bottom: 6px;
+    }
+
+    .field label span.optional {
+      font-weight: 400;
+      color: #666;
+    }
+
+    .field input,
+    .field textarea {
+      width: 100%;
+      font: inherit;
+      font-size: 15px;
+      line-height: 1.5;
+      color: #1a1a1a;
+      background: #fff;
+      border: 1px solid #e5e5e5;
+      border-radius: 6px;
+      padding: 10px 12px;
+      transition: border-color 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .field input:focus,
+    .field textarea:focus {
+      outline: none;
+      border-color: #3b82f6;
+      box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+    }
+
+    .field textarea {
+      min-height: 140px;
+      resize: vertical;
+    }
+
+    .field-error {
+      display: none;
+      margin-top: 6px;
+      font-size: 13px;
+      color: #dc2626;
+    }
+
+    .field-error.visible {
+      display: block;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 12px 22px;
+      font-size: 15px;
+      font-weight: 600;
+      font-family: inherit;
+      color: #fff;
+      background: #2563eb;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.15s ease;
+    }
+
+    .btn-primary:hover {
+      background: #1d4ed8;
+    }
+
+    .btn-primary:active {
+      background: #1e40af;
+    }
+
+    .nav-links {
+      margin-top: 12px;
+      font-size: 14px;
+    }
+
+    footer {
+      margin-top: 60px;
+      border-top: 1px solid #e5e5e5;
+      padding-top: 20px;
+      font-size: 13px;
+      color: #888;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      body { background: #0f0f0f; color: #e0e0e0; }
+      header { border-color: #2a2a2a; }
+      header h1, h2 { color: #f0f0f0; }
+      header p { color: #999; }
+      p { color: #ccc; }
+      .callout { background: #0d1f35; border-color: #3b82f6; color: #a8c8f0; }
+      .field label { color: #f0f0f0; }
+      .field label span.optional { color: #888; }
+      .field input,
+      .field textarea {
+        color: #e0e0e0;
+        background: #1a1a1a;
+        border-color: #2a2a2a;
+      }
+      .field input:focus,
+      .field textarea:focus {
+        border-color: #3b82f6;
+        box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.25);
+      }
+      footer { border-color: #2a2a2a; color: #666; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+
+    <header>
+      <h1>Suporte — Smart Bible</h1>
+      <p>Estamos aqui para ajudar com dúvidas, problemas técnicos e sugestões.</p>
+      <p class="nav-links">
+        <a href="index.html">Política de Privacidade</a>
+      </p>
+    </header>
+
+    <p>
+      Descreva sua solicitação no formulário abaixo. Ao tocar em <strong>Enviar e-mail</strong>,
+      o aplicativo de e-mail do seu dispositivo será aberto com a mensagem pronta para
+      <a href="mailto:gbarreto.alves@gmail.com">o suporte</a>.
+    </p>
+
+    <div class="callout">
+      <strong>Tempo de resposta:</strong> até 3 dias úteis. Para questões de
+      privacidade e dados pessoais, consulte também a nossa
+      <a href="index.html">Política de Privacidade</a> (prazo de até 15 dias úteis).
+    </div>
+
+    <h2>Enviar mensagem</h2>
+
+    <form class="support-form" id="support-form" novalidate>
+      <div class="field">
+        <label for="name">Seu nome <span class="optional">(opcional)</span></label>
+        <input type="text" id="name" name="name" autocomplete="name" placeholder="Como podemos te chamar?" />
+      </div>
+
+      <div class="field">
+        <label for="reply-email">Seu e-mail <span class="optional">(opcional, para resposta)</span></label>
+        <input type="email" id="reply-email" name="reply-email" autocomplete="email" placeholder="seu@email.com" />
+      </div>
+
+      <div class="field">
+        <label for="subject">Assunto</label>
+        <input type="text" id="subject" name="subject" value="Suporte — Smart Bible" />
+      </div>
+
+      <div class="field">
+        <label for="message">Mensagem</label>
+        <textarea id="message" name="message" required placeholder="Descreva sua dúvida ou problema com o máximo de detalhes possível."></textarea>
+        <p class="field-error" id="message-error" role="alert">Informe uma mensagem antes de enviar.</p>
+      </div>
+
+      <button type="submit" class="btn-primary">Enviar e-mail</button>
+    </form>
+
+    <footer>
+      <p>Smart Bible &copy; 2026. Todos os direitos reservados.</p>
+    </footer>
+
+  </div>
+
+  <script>
+    (function () {
+      var form = document.getElementById('support-form');
+      var messageEl = document.getElementById('message');
+      var messageError = document.getElementById('message-error');
+      var to = 'gbarreto.alves@gmail.com';
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var message = messageEl.value.trim();
+        if (!message) {
+          messageError.classList.add('visible');
+          messageEl.focus();
+          return;
+        }
+        messageError.classList.remove('visible');
+
+        var name = document.getElementById('name').value.trim();
+        var replyEmail = document.getElementById('reply-email').value.trim();
+        var subject = document.getElementById('subject').value.trim() || 'Suporte — Smart Bible';
+
+        var bodyParts = [];
+        if (name) bodyParts.push('Nome: ' + name);
+        if (replyEmail) bodyParts.push('E-mail para resposta: ' + replyEmail);
+        if (bodyParts.length) bodyParts.push('');
+        bodyParts.push(message);
+
+        var mailto =
+          'mailto:' + to +
+          '?subject=' + encodeURIComponent(subject) +
+          '&body=' + encodeURIComponent(bodyParts.join('\n'));
+
+        window.location.href = mailto;
+      });
+
+      messageEl.addEventListener('input', function () {
+        if (messageEl.value.trim()) {
+          messageError.classList.remove('visible');
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
