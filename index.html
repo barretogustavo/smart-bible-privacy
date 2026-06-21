@@ -134,7 +134,7 @@
 
     <header>
       <h1>Política de Privacidade — Smart Bible</h1>
-      <p>Última atualização: 25 de maio de 2026</p>
+      <p>Última atualização: 21 de junho de 2026</p>
     </header>
 
     <p>
@@ -160,9 +160,12 @@
 
     <h3>1.2 Dados de uso da Inteligência Artificial</h3>
     <ul>
-      <li>Número de perguntas realizadas à IA por dia, associado ao seu UID.</li>
+      <li>Número de perguntas realizadas à IA por dia, associado ao seu UID (armazenado no Firebase).</li>
       <li>O <em>conteúdo</em> das perguntas é enviado ao nosso servidor backend para processamento
-          em tempo real e <strong>não é armazenado</strong> de forma permanente.</li>
+          em tempo real. O servidor <strong>não mantém um histórico permanente</strong> das mensagens
+          para fins de arquivo.</li>
+      <li>O <strong>histórico de conversas</strong> (perguntas e respostas exibidas no app) é salvo
+          <strong>apenas no seu dispositivo</strong>, salvo se você excluir o app ou limpar os dados.</li>
     </ul>
 
     <h3>1.3 Dados de assinatura</h3>
@@ -173,13 +176,14 @@
           pela Apple App Store e pelo RevenueCat. Nós nunca temos acesso a esses dados.</li>
     </ul>
 
-    <h3>1.4 Preferências locais (armazenadas apenas no dispositivo)</h3>
-    <p>Os seguintes dados são salvos somente no seu dispositivo e nunca enviados a servidores:</p>
+    <h3>1.4 Dados armazenados apenas no dispositivo</h3>
+    <p>Os seguintes dados ficam somente no seu aparelho e não são sincronizados em nossos servidores:</p>
     <ul>
-      <li>Versão bíblica preferida</li>
-      <li>Último livro e capítulo lido</li>
-      <li>Preferência de tema (claro/escuro/sistema)</li>
-      <li>Conclusão do onboarding</li>
+      <li>Versão bíblica preferida, último livro e capítulo lidos</li>
+      <li>Preferência de tema (claro/escuro/sistema) e conclusão do onboarding</li>
+      <li><strong>Versículos salvos</strong> (marcadores que você cria na leitura)</li>
+      <li><strong>Sessões de chat com a IA</strong> (histórico local das conversas)</li>
+      <li>Cache do versículo do dia, quando aplicável</li>
     </ul>
 
     <h3>1.5 Dados técnicos</h3>
@@ -286,7 +290,10 @@
       <li><strong>Histórico de uso da IA:</strong> registros diários retidos por até 90 dias,
           após os quais são excluídos automaticamente.</li>
       <li><strong>Status de assinatura:</strong> retido enquanto necessário para validação de acesso.</li>
-      <li>Após a exclusão da conta, todos os dados pessoais são removidos em até 30 dias.</li>
+      <li>Após a <strong>exclusão da conta no app</strong>, removemos de imediato os dados da conta
+          no Firebase Authentication e no Firestore associados ao seu UID (perfil, uso diário da IA,
+          espelho de assinatura). O histórico de chat e versículos salvos no dispositivo são apagados
+          como parte desse fluxo no aplicativo.</li>
     </ul>
 
     <!-- 5 -->
@@ -313,7 +320,8 @@
       <li><strong>Anonimização, bloqueio ou eliminação:</strong> solicitar a anonimização ou exclusão
           de dados desnecessários ou excessivos.</li>
       <li><strong>Portabilidade:</strong> receber seus dados em formato estruturado.</li>
-      <li><strong>Eliminação:</strong> excluir todos os seus dados pessoais mediante solicitação.</li>
+      <li><strong>Eliminação:</strong> excluir a conta e dados pessoais pelo app
+          (<strong>Configurações → Excluir conta</strong>) ou mediante solicitação por e-mail.</li>
       <li><strong>Revogação do consentimento:</strong> revogar o consentimento para comunicações
           de marketing a qualquer momento.</li>
     </ul>
@@ -346,13 +354,21 @@
     <!-- 9 -->
     <h2>9. Exclusão de conta e dados</h2>
     <p>
-      Você pode solicitar a exclusão completa da sua conta e de todos os dados associados
-      enviando um e-mail para o endereço de contato abaixo com o assunto
-      <strong>"Exclusão de dados — Smart Bible"</strong>.
+      Em conformidade com os requisitos da App Store, você pode <strong>excluir sua conta
+      diretamente no aplicativo</strong>: abra <strong>Configurações → Excluir conta</strong>,
+      confirme a ação e, se solicitado, autentique-se novamente (senha, Apple ou Google).
     </p>
     <p>
-      Após a confirmação da sua identidade, excluiremos todos os seus dados pessoais em até
-      30 dias. Dados anonimizados ou agregados podem ser mantidos para fins estatísticos.
+      Essa exclusão é <strong>permanente</strong> e remove sua conta de autenticação, os dados
+      associados no Firestore (perfil, limites de uso da IA, status de assinatura espelhado) e o
+      histórico de chat armazenado no dispositivo. Assinaturas ativas na App Store continuam
+      vinculadas à sua Apple ID — cancele-as em
+      <strong>Ajustes → [seu nome] → Assinaturas</strong> se não desejar mais cobranças.
+    </p>
+    <p>
+      Se não conseguir usar o app, você também pode solicitar exclusão por e-mail (seção 11) com o
+      assunto <strong>"Exclusão de dados — Smart Bible"</strong>, informando o e-mail da conta.
+      Responderemos em até 15 dias úteis.
     </p>
 
     <!-- 10 -->
@@ -378,6 +394,11 @@
 
     <footer>
       <p>Smart Bible &copy; 2026. Todos os direitos reservados.</p>
+      <p style="margin-top:8px;">
+        <a href="support.html">Suporte</a>
+        &nbsp;·&nbsp;
+        <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener">Termos de uso (EULA Apple)</a>
+      </p>
       <p style="margin-top:4px;">
         Esta política está em conformidade com a Lei Geral de Proteção de Dados (LGPD — Lei
         nº 13.709/2018) e com os requisitos de privacidade da Apple App Store.
